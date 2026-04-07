@@ -12,4 +12,4 @@ jobs:
         java-version: 25
         distribution: zulu
     - uses: sbt/setup-sbt@v1
-    - run: sbt -J-Xmx6G -J-Xss16m scalafmtSbtCheck scalafmtCheckAll compile chudnovsky/run
+    - run: sbt --server -J-Xmx6G -J-Xss16m scalafmtSbtCheck scalafmtCheckAll compile chudnovsky/run
