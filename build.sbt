@@ -1,9 +1,5 @@
-val common = Def.settings(
-  scalaVersion := "3.8.3"
-)
+scalaVersion := "3.8.3"
 
-common
+val core = project
 
-val core = project.settings(common)
-
-val chudnovsky = project.settings(common).dependsOn(core)
+val chudnovsky = project.dependsOn(core)
