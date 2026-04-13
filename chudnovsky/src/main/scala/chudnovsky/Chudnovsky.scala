@@ -34,6 +34,7 @@ object Chudnovsky {
     println(resultString)
     val matchDigitsCount = resultString.zip(pi).takeWhile(_ == _).size - 2
     println(s"match ${matchDigitsCount} digits")
+    assert(matchDigitsCount == 40)
   }
 
   def bitToBigInt(x: String): BigInt = {
